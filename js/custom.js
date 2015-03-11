@@ -22,3 +22,40 @@ function getPoints($service){
     });
 
 }
+
+function getServices ($crs) {
+
+    $.getJSON('departures.php?crs='+$crs, function (data) {
+
+        var returnedServices = '';
+
+        for (var i in data.GetStationBoardResult.trainServices.service) {
+
+            returnedServices += data.GetStationBoardResult.trainServices.service[i].serviceID;
+            returnedServices += ',';
+
+        }
+
+        console.log('Function returned');
+        console.log(returnedServices);
+
+        return returnedServices;
+
+    });
+}
+
+
+function getServiceDetails($serviceID) {
+    returnedData =
+        $.getJSON('servicedetails.php?service='+$serviceID, function (data2) {
+        var serviceTemplate = '';
+        for (var j in data2.GetServiceDetailsResult.subsequentCallingPoints.callingPointList.callingPoint) {
+            serviceTemplate += data2.GetServiceDetailsResult.subsequentCallingPoints.callingPointList.callingPoint[j].locationName;
+            serviceTemplate += '(' + data2.GetServiceDetailsResult.subsequentCallingPoints.callingPointList.callingPoint[j].st + ')';
+            serviceTemplate += ', ';
+        }
+        return serviceTemplate;
+    });
+    console.log(returnedData);
+    return returnedData;
+};

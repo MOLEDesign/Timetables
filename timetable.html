@@ -8,6 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -48,63 +49,35 @@
 <script src="js/custom.js"></script>
 <script>
 
-    var $crs = GetURLParameter('crs');
+    $.ajaxSetup({
+        async: false
+    });
 
+    var $crs = GetURLParameter('crs');
+    var returnedServices=[];
     $.getJSON('departures.php?crs='+$crs, function (data) {
 
         var headertemplate = '<h1>' + data.GetStationBoardResult.locationName + '</h1>';
-
-        var date = new Date(data.GetStationBoardResult.generatedAt);
-
-        var dateString = date.getFullYear() + '-' + ("0" + (date.getMonth() + 1)).substr(-2) + '-' + ("0" + date.getDate()).substr(-2);
-        var timeString = ("0" + date.getHours()).substr(-2) + ':' + ("0" + date.getMinutes()).substr(-2);
-
-        headertemplate += '<p>Last updated: ' + dateString + ' at ' + timeString + ' </p>';
+        headertemplate += '<p>Last Generated at ' + data.GetStationBoardResult.generatedAt + '</p>';
         $("#headerArea").html(headertemplate);
 
-
-        var template = '<table class="table table-striped">';
-        template += '<thead>';
-        template += '<td>Time</td>';
-        template += '<td>Destination</td>';
-        template += '<td>Platform</td>';
-        template += '<td>Arrival</td>';
-        template += '</thead>';
-        template += '<tbody>';
+        var i=0;
 
         for (var i in data.GetStationBoardResult.trainServices.service) {
-        template += '<tr>';
-        template += '<td><h5>' + data.GetStationBoardResult.trainServices.service[i].std +'</h5></td>';
-        template += '<td><h5>' + data.GetStationBoardResult.trainServices.service[i].destination.location.locationName + '</h5></td>';
-        template += '<td><h5>' + data.GetStationBoardResult.trainServices.service[i].platform + '</h5></td>';
-        template += '<td><h5>' + data.GetStationBoardResult.trainServices.service[i].etd + '</h5></td>';
-        template += '</tr>';
-        template += '<tr>';
-        template += '<td colspan="4">Calling at ' ;
-
-            var $service = data.GetStationBoardResult.trainServices.service[i].serviceID;
-            template += $service;
-
-            $.getJSON('servicedetails.php?service='+$service, function (data) {
-
-                for (var i in data.GetServiceDetailsResult.subsequentCallingPoints.callingPointList.callingPoint) {
-                template += data.GetServiceDetailsResult.subsequentCallingPoints.callingPointList.callingPoint[i].locationName;
-                template += ', ';
-                }
-            });
-
-        template += '<br /><small>Service Operated by ' + data.GetStationBoardResult.trainServices.service[i].operator + '</small></td>';
-        template += '</tr>';
-
+            returnedServices[i]= data.GetStationBoardResult.trainServices.service[i].serviceID;
         }
 
-        template += '</tbody>';
-        template += '</table>';
-
-        $("#dataArea").html(template);
-
-
     });
+    console.log(returnedServices);
+
+    var j=0;
+
+    for (var j in returnedServices){
+        $.getJSON('servicedetails.php?service='+returnedServices[j], function (data2) {
+            console.log(data2);
+        })
+    }
+
 
 </script>
 
