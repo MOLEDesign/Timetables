@@ -73,12 +73,17 @@
 
     $.getJSON('example1.php?crs='+$crs, function (data) {
 
+<<<<<<< Updated upstream
         var date = new Date(data.GetStationBoardResult.generatedAt);
         var timeString = ("0" + date.getHours()).substr(-2) + ':' + ("0" + date.getMinutes()).substr(-2);
         console.log(timeString);
 
         var headertemplate = '<h1>' + data.GetStationBoardResult.locationName + '</h1>';
         headertemplate += '<p>Last Generated at ' + timestring + '</p>';
+=======
+        var headertemplate = '<h1>' + data.GetStationBoardResult.locationName + '</h1>';
+        headertemplate += '<p>Last Generated at ' + data.GetStationBoardResult.generatedAt + '</p>';
+>>>>>>> Stashed changes
         $("#headerArea").html(headertemplate);
 
 
