@@ -11,7 +11,9 @@ if (!isset($_REQUEST['service'])) {
 
 $service = $_REQUEST['service'];
 
-$departureBoard = $OpenLDBWS->GetServiceDetails($service);
+$service = preg_replace("/\+/","%2B",$service);
+
+$departureBoard = $OpenLDBWS->GetServiceDetails($cleanstring);
 
 header("Content-Type: text/plain");
 
