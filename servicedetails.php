@@ -9,11 +9,14 @@ if (!isset($_REQUEST['service'])) {
 }
 
 
-$service = $_REQUEST['service'];
+$service = (urlencode($_REQUEST['service']));
 
-$service = preg_replace("/\+/","%2B",$service);
+$service = substr($service,0,-6);
 
-$departureBoard = $OpenLDBWS->GetServiceDetails($cleanstring);
+$service = $service.'==';
+
+
+$departureBoard = $OpenLDBWS->GetServiceDetails($service);
 
 header("Content-Type: text/plain");
 
