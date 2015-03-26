@@ -16,9 +16,7 @@ $service = substr($service,0,-6);
 $service = $service.'==';
 
 
-$service = preg_replace("/\+/","%2B",$service);
-
-$departureBoard = $OpenLDBWS->GetServiceDetails($cleanstring);
+$departureBoard = $OpenLDBWS->GetServiceDetails($service);
 
 header("Content-Type: text/plain");
 

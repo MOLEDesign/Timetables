@@ -101,12 +101,6 @@
     var servicedetails = '<table class="table">';
 
     for (var j in returnedServices){
-<<<<<<< HEAD
-=======
-        $.getJSON('servicedetails.php?service='+returnedServices[j], function (data2) {
-            console.log('going to url : .servicedetails.php?service='+returnedServices[j]);
-            console.log(data2);
->>>>>>> origin/master
             servicedetails += '<tr>';
             servicedetails += '<td class="col-md-2"><h1>' + returnedDepartureTime[j] + '</h1></td>';
             servicedetails += '<td class="col-md-6 yellow"><h1>' + returnedDestinations[j] + '</h1></td>';
