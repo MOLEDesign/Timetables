@@ -8,11 +8,16 @@ if (!isset($_REQUEST['crs'])) {
     return;
 }
 
+if (!isset($_REQUEST['total'])) {
+    echo 'Please supply total number of results';
+    return;
+}
 
     $crs = $_REQUEST['crs'];
     $crs = strtoupper($crs);
+    $total = $_REQUEST['total'];
 
-    $departureBoard = $OpenLDBWS->GetDepartureBoard(30,$crs);
+    $departureBoard = $OpenLDBWS->GetDepartureBoard($total,$crs);
 
     header("Content-Type: text/plain");
 

@@ -85,7 +85,7 @@
 <script src="js/custom.js"></script>
 <script>
 
-    $.getJSON('csr.json', function (data) {
+    $.getJSON('http://54.194.148.89:3000/stations/all', function (data) {
         var stations = $( '#stations' );
         for (var i in data) {
             stations.append( '<option value="' + data[i].Code + '">' + data[i].StationName + '</option>' );
