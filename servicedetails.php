@@ -9,7 +9,12 @@ if (!isset($_REQUEST['service'])) {
 }
 
 
-$service = $_REQUEST['service'];
+$service = (urlencode($_REQUEST['service']));
+
+$service = substr($service,0,-6);
+
+$service = $service.'==';
+
 
 $service = preg_replace("/\+/","%2B",$service);
 

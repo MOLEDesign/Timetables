@@ -75,7 +75,6 @@
 
         var date = new Date(data.GetStationBoardResult.generatedAt);
         var timeString = ("0" + date.getHours()).substr(-2) + ':' + ("0" + date.getMinutes()).substr(-2);
-        console.log(timeString);
 
         var headertemplate = '<h1>' + data.GetStationBoardResult.locationName + '</h1>';
         headertemplate += '<p>Last Generated at ' + timestring + '</p>';
