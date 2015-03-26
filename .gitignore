@@ -1,6 +1,10 @@
 .idea
 .DS_Store
 workspace.xml
-.idea/workspace.xml
-
-.idea/workspace.xml
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
