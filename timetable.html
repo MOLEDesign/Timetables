@@ -63,6 +63,7 @@
     var returnedDepartureTime=[];
     var returnedStatus=[];
     var platform=[];
+    var message=[];
 
     $.getJSON('http://52.16.172.160:3000/cis/public/'+$crs+'/10', function (data) {
 
@@ -74,6 +75,13 @@
         headertemplate += '<td class="col-md-7" colspan="2" style="border:none;"><h2>Departures from ' + data.GetStationBoardResult.locationName + ' </h2></td>';
         headertemplate += '<td class="col-md-5" colspan="2" style="border:none;"><h2 class="pull-right">Train info updated <strong>' + timeString + '</strong></h2></td>';
         headertemplate += '</tr>';
+
+        if ("nrccMessages" in data.GetStationBoardResult) {
+            headertemplate += '<tr>';
+            headertemplate += '<td class="col-md-12" colspan="4" style="border:none; color: red;"><h2>'+ data.GetStationBoardResult.nrccMessages.message._ +'</h2></td>';
+            headertemplate += '</tr>';
+        }
+
         headertemplate += '<tr>';
         headertemplate += '<td class="col-md-2" style="border:none;"><h2>Time</h2></td>';
         headertemplate += '<td class="col-md-5" style="border:none;"><h2>Destination</h2></td>';
@@ -94,7 +102,6 @@
         }
 
     });
-    console.log(returnedServices);
 
     var j=0;
 
@@ -103,8 +110,8 @@
     for (var j in returnedServices){
             servicedetails += '<tr>';
             servicedetails += '<td class="col-md-2"><h1>' + returnedDepartureTime[j] + '</h1></td>';
-            servicedetails += '<td class="col-md-6 yellow"><h1>' + returnedDestinations[j] + '</h1></td>';
-            servicedetails += '<td class="col-md-2"><h1>' + platform[j] + '</h1></td>';
+            servicedetails += '<td class="col-md-5 yellow"><h1>' + returnedDestinations[j] + '</h1></td>';
+            servicedetails += '<td class="col-md-3"><h1>' + platform[j] + '</h1></td>';
             servicedetails += '<td class="col-md-2"><h1>' + returnedStatus[j] + '</h1></td>';
             servicedetails += '</tr>';
     }
