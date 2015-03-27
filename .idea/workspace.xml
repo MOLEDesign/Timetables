@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="b0536b88-110e-4073-87b9-6c9459de67e6" name="Default" comment="" />
+    <list default="true" id="c27cd44e-84f4-4b4e-ba27-b866949a3b11" name="Default" comment="" />
     <ignored path="lion.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,45 +22,45 @@
     <favorites_list name="lion" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="timetable.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/timetable.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="62" selection-start="1851" selection-end="1851" vertical-scroll-proportion="-1.3758866" vertical-offset="1587" max-vertical-offset="2010">
+              <folding>
+                <marker date="1427453870000" expanded="false" signature="2204:2216" placeholder="..." />
+                <marker date="1427453870000" expanded="false" signature="2366:2378" placeholder="..." />
+                <marker date="1427453870000" expanded="false" signature="2676:2700" placeholder="..." />
+                <marker date="1427453870000" expanded="false" signature="2913:2925" placeholder="..." />
+                <marker date="1427453870000" expanded="false" signature="3003:3015" placeholder="..." />
+                <marker date="1427453870000" expanded="false" signature="3100:3112" placeholder="..." />
+                <marker date="1427453870000" expanded="false" signature="3194:3206" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/custom.js" />
-        <option value="$PROJECT_DIR$/index2.html" />
-        <option value="$PROJECT_DIR$/timetable2.html" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/search_crs.php" />
-        <option value="$PROJECT_DIR$/servicedetails.php" />
-        <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/timetable.html" />
-        <option value="$PROJECT_DIR$/servicedetails.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-<<<<<<< HEAD
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="821" />
-=======
-    <option name="x" value="39" />
-    <option name="y" value="183" />
-    <option name="width" value="2560" />
-    <option name="height" value="1322" />
->>>>>>> origin/master
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -100,35 +100,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="Timetables" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -139,26 +111,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../components/comPinplore/site" />
+    <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../node/node-train-data" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-=======
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../androidWeblink" />
-    <property name="FullScreen" value="false" />
->>>>>>> origin/master
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -171,65 +128,36 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="b72dcc91-e1e2-46d0-b8a2-593f3c85d7c2" server_name="app - Timetables">
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-    <supportedVersion>125</supportedVersion>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b0536b88-110e-4073-87b9-6c9459de67e6" name="Default" comment="" />
-      <created>1422788248253</created>
-      <updated>1422788248253</updated>
+      <changelist id="c27cd44e-84f4-4b4e-ba27-b866949a3b11" name="Default" comment="" />
+      <created>1427387616577</created>
+      <updated>1427387616577</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
     <frame x="0" y="23" width="1440" height="821" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3269494" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-=======
-    <frame x="39" y="183" width="2560" height="1322" extended-state="0" />
-    <editor active="false" />
-    <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17207792" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
->>>>>>> origin/master
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33058986" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962668" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30829757" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28196982" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
->>>>>>> origin/master
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -257,225 +185,18 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state line="10" column="3" selection-start="312" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="674" max-vertical-offset="1710" />
-=======
-        <state line="54" column="60" selection-start="2180" selection-end="2180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="480">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/timetable.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="5" selection-start="4573" selection-end="4573" vertical-scroll-proportion="0.0" vertical-offset="1770" max-vertical-offset="2925">
+        <state line="67" column="62" selection-start="1851" selection-end="1851" vertical-scroll-proportion="-1.3758866" vertical-offset="1587" max-vertical-offset="2010">
           <folding>
-            <marker date="1426761421000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426761421000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426761421000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426761421000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427453870000" expanded="false" signature="2204:2216" placeholder="..." />
+            <marker date="1427453870000" expanded="false" signature="2366:2378" placeholder="..." />
+            <marker date="1427453870000" expanded="false" signature="2676:2700" placeholder="..." />
+            <marker date="1427453870000" expanded="false" signature="2913:2925" placeholder="..." />
+            <marker date="1427453870000" expanded="false" signature="3003:3015" placeholder="..." />
+            <marker date="1427453870000" expanded="false" signature="3100:3112" placeholder="..." />
+            <marker date="1427453870000" expanded="false" signature="3194:3206" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="2248" selection-end="2455" vertical-scroll-proportion="0.0" vertical-offset="1125" max-vertical-offset="1965">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="9" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.0" vertical-offset="825" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="3" selection-start="312" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="674" max-vertical-offset="1710">
-          <folding />
-        </state>
->>>>>>> origin/master
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="480" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timetable.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state line="62" column="88" selection-start="1644" selection-end="1644" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1545" />
-=======
-        <state line="62" column="88" selection-start="1644" selection-end="1644" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1545">
-          <folding>
-            <marker date="1426761421000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426761421000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426761421000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426761421000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
->>>>>>> origin/master
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="2248" selection-end="2484" vertical-scroll-proportion="0.0" vertical-offset="972" max-vertical-offset="1830" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="9" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="990" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="3" selection-start="312" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="674" max-vertical-offset="1710" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="480" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timetable.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state line="61" column="46" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.0" vertical-offset="794" max-vertical-offset="1335" />
-=======
-        <state line="61" column="46" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.0" vertical-offset="794" max-vertical-offset="1335">
-          <folding>
-            <marker date="1426761421000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426761421000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426761421000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426761421000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
->>>>>>> origin/master
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="2248" selection-end="2484" vertical-scroll-proportion="0.0" vertical-offset="972" max-vertical-offset="1830" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="9" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="990" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/departures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="460" />
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="2248" selection-end="2455" vertical-scroll-proportion="0.60280377" vertical-offset="867" max-vertical-offset="1890" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/custom.js">
-=======
-    <entry file="file://$PROJECT_DIR$/departures.php">
->>>>>>> origin/master
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="9" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.65707964" vertical-offset="528" max-vertical-offset="990" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="53" selection-start="3180" selection-end="3180" vertical-scroll-proportion="0.08163265" vertical-offset="1269" max-vertical-offset="1710" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timetable2.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state line="109" column="0" selection-start="3733" selection-end="3733" vertical-scroll-proportion="0.5194611" vertical-offset="1288" max-vertical-offset="2055" />
-=======
-        <state line="54" column="60" selection-start="2180" selection-end="2180" vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="1710">
-          <folding />
-        </state>
->>>>>>> origin/master
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search_crs.php">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state line="13" column="1" selection-start="286" selection-end="286" vertical-scroll-proportion="0.4431818" vertical-offset="0" max-vertical-offset="510" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenLDBWS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="930" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicedetails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="32" selection-start="222" selection-end="222" vertical-scroll-proportion="0.37671232" vertical-offset="0" max-vertical-offset="438" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/RMSSettings.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.1666665" vertical-offset="2775" max-vertical-offset="16725" />
-=======
-        <state line="69" column="0" selection-start="2139" selection-end="2139" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="1875">
-          <folding />
-        </state>
->>>>>>> origin/master
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timetable.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state line="74" column="102" selection-start="2382" selection-end="2382" vertical-scroll-proportion="-0.22950819" vertical-offset="1208" max-vertical-offset="1845">
-          <folding>
-            <marker date="1427384782000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1427384782000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1427384782000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1427384782000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1427384782000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1427384782000" expanded="false" signature="-1:-1" placeholder="..." />
-=======
-        <state line="114" column="5" selection-start="4495" selection-end="4495" vertical-scroll-proportion="0.62647444" vertical-offset="1232" max-vertical-offset="1995">
-          <folding>
-            <marker date="1426761421000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426761421000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426761421000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426761421000" expanded="true" signature="-1:-1" placeholder="..." />
->>>>>>> origin/master
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="232" selection-end="232" vertical-scroll-proportion="0.46563193" vertical-offset="0" max-vertical-offset="585">
-=======
-    <entry file="file://$PROJECT_DIR$/servicedetails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="298" selection-end="298" vertical-scroll-proportion="0.24793388" vertical-offset="0" max-vertical-offset="968">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenLDBWS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="955">
->>>>>>> origin/master
-          <folding />
         </state>
       </provider>
     </entry>
