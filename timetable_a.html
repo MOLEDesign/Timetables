@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="refresh" content="60">
+    <META HTTP-EQUIV="expires" CONTENT="now">
+    <title>Timetables</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <div id="headerArea">
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="table-responsive">
+        <div id="dataArea">
+
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; FGW 2015</p>
+    </footer>
+</div>
+
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="js/mustache.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+
+    var $crs = GetURLParameter('crs');
+    var returnedServices=[];
+    var returnedDestinations=[];
+    var returnedDepartureTime=[];
+    var returnedStatus=[];
+    var platform=[];
+    var message=[];
+
+    $.getJSON('http://52.16.172.160:3000/cis/public/'+$crs+'/7', function (data) {
+
+        var date = new Date(data.GetStationBoardResult.generatedAt);
+        var timeString = ("0" + date.getHours()).substr(-2) + ':' + ("0" + date.getMinutes()).substr(-2);
+
+        var headertemplate = '<table class="table">';
+        headertemplate += '<tr>';
+        headertemplate += '<td class="col-md-7" colspan="2" style="border:none;"><h2>Departures from ' + data.GetStationBoardResult.locationName + ' </h2></td>';
+        headertemplate += '<td class="col-md-5" colspan="2" style="border:none;"><h2 class="pull-right">Train info updated <strong>' + timeString + '</strong></h2></td>';
+        headertemplate += '</tr>';
+
+        if ("nrccMessages" in data.GetStationBoardResult) {
+            headertemplate += '<tr>';
+            headertemplate += '<td class="col-md-12" colspan="4" style="border:none; color: red;"><h2>'+ data.GetStationBoardResult.nrccMessages.message._ +'</h2></td>';
+            headertemplate += '</tr>';
+        }
+
+        headertemplate += '<tr>';
+        headertemplate += '<td class="col-md-2" style="border:none;"><h2>Time</h2></td>';
+        headertemplate += '<td class="col-md-6" style="border:none;"><h2>Destination</h2></td>';
+        headertemplate += '<td class="col-md-2" style="border:none;"><h2>Platform</h2></td>';
+        headertemplate += '<td class="col-md-2" style="border:none;"><h2 class="pull-right">Expected</h2></td>';
+        headertemplate += '</tr>';
+        headertemplate += '</table>';
+        $("#headerArea").html(headertemplate);
+
+        var i=0;
+
+        for (var i in data.GetStationBoardResult.trainServices.service) {
+            returnedServices[i]= data.GetStationBoardResult.trainServices.service[i].serviceID;
+            returnedDestinations[i] = data.GetStationBoardResult.trainServices.service[i].destination.location.locationName;
+            returnedDepartureTime[i] = data.GetStationBoardResult.trainServices.service[i].std;
+            returnedStatus[i] = data.GetStationBoardResult.trainServices.service[i].etd;
+            platform[i] = data.GetStationBoardResult.trainServices.service[i].platform;
+        }
+
+    });
+
+    var j=0;
+
+    var servicedetails = '<table class="table">';
+
+    for (var j in returnedServices){
+            servicedetails += '<tr>';
+            servicedetails += '<td class="col-md-2"><h1>' + returnedDepartureTime[j] + '</h1></td>';
+            servicedetails += '<td class="col-md-6 yellow"><h1>' + returnedDestinations[j] + '</h1></td>';
+        if (platform[j] === undefined) {
+            servicedetails += '<td class="col-md-2"><h1>TBA</h1></td>';
+        } else {
+            servicedetails += '<td class="col-md-2"><h1>' + platform[j] + '</h1></td>';
+        }
+            servicedetails += '<td class="col-md-2"><h1 class="pull-right">' + returnedStatus[j] + '</h1></td>';
+            servicedetails += '</tr>';
+    }
+
+    servicedetails += '</table>';
+
+    $("#dataArea").html(servicedetails);
+
+</script>
+
+</html>
